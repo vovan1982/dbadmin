@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/16x16">
+        <file>ico/add_user_16x16.png</file>
+        <file>ico/apply_16x16.png</file>
+        <file>ico/delete_user_16x16.png</file>
+        <file>ico/exit_16x16.png</file>
+        <file>ico/cancel_16x16.png</file>
+        <file>ico/clear_left_16x16.png</file>
+        <file>ico/filepath_16x16.png</file>
+    </qresource>
+    <qresource prefix="/32x32">
+        <file>ico/add-to-database_32x32.png</file>
+        <file>ico/backup_32x32.png</file>
+        <file>ico/connect_creating_32x32.png</file>
+        <file>ico/connect_established_32x32.png</file>
+        <file>ico/connect_no_32x32.png</file>
+        <file>ico/remove-from-database_32x32.png</file>
+        <file>ico/info_32x32.png</file>
+        <file>ico/save_accept_32x32.png</file>
+        <file>ico/save_delete_32x32.png</file>
+        <file>ico/accept-database.png</file>
+        <file>ico/Database-Upload.png</file>
+        <file>ico/download-database.png</file>
+    </qresource>
+    <qresource prefix="/128x128">
+        <file>ico/Database_128x128.png</file>
+    </qresource>
+</RCC>

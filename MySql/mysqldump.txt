@@ -1,0 +1,3 @@
+mysqldump.exe -h krivorak1 --verbose --single-transaction --skip-triggers -u root -pB27io64k demo > D:\demo.sql
+mysqldump.exe -h krivorak1 --no-create-info --no-data --triggers --add-drop-trigger --routines --events -u root -pB27io64k demo >> D:\demo.sql
+mysql.exe -h krivorak1 -u root -pB27io64k test < D:\demo.sql

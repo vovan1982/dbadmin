@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/sql">
+        <file>sql/base.sql</file>
+        <file>sql/trigers.sql</file>
+        <file>sql/demoData.sql</file>
+        <file>sql/reference.sql</file>
+    </qresource>
+</RCC>
