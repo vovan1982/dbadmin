@@ -20,7 +20,7 @@ void ImportExportDBWorker::process()
 {
     if(m_mode == Enums::Export){
         emit logData(tr("Выполняется экспорт базы..."));
-        QString cmd = QString("\"%1/mysqldump.exe\" -h %2 --verbose --single-transaction --skip-triggers -u %3 -p%4 %5")
+        QString cmd = QString("\"%1/mysqldump.exe\" --defaults-file=\"%1/my.cnf\" -h %2 --verbose --single-transaction --skip-triggers -u %3 -p%4 %5")
                 .arg(m_credentials.value("pathToMySqlTools").toString())
                 .arg(m_credentials.value("host").toString())
                 .arg(m_credentials.value("login").toString())
@@ -43,7 +43,7 @@ void ImportExportDBWorker::process()
             emit finished();
             return;
         }
-        cmd = QString("\"%1/mysqldump.exe\" -h %2 --verbose --no-create-info --no-data --triggers --add-drop-trigger --routines --events -u %3 -p%4 %5")
+        cmd = QString("\"%1/mysqldump.exe\" --defaults-file=\"%1/my.cnf\" -h %2 --verbose --no-create-info --no-data --triggers --add-drop-trigger --routines --events -u %3 -p%4 %5")
                 .arg(m_credentials.value("pathToMySqlTools").toString())
                 .arg(m_credentials.value("host").toString())
                 .arg(m_credentials.value("login").toString())
